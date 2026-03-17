@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie — Imane HADI, Artiste Peintre</title>
+  <meta name="description" content="Explorez la galerie complète d'Imane HADI : portraits, paysages et art abstrait. Tableaux originaux à vendre en dirham marocain." />
+  <meta property="og:title" content="Galerie d'Art — Imane HADI" />
+  <meta property="og:description" content="Collection complète de peintures originales d'Imane HADI." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+
+  <!-- NAVIGATION -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Navigation principale">
+    <a href="../index.html" class="nav-logo">Imane <span>HADI</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="gallery.html" class="active">Galerie</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO GALERIE -->
+  <section style="height:45vh;min-height:350px;display:flex;align-items:flex-end;padding-bottom:3.5rem;background:var(--noir);position:relative;overflow:hidden;padding-top:80px" aria-label="En-tête galerie">
+    <div style="position:absolute;inset:0;background:url('../images/abstract1.png') center/cover;opacity:0.2;"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.9),transparent)"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <span class="section-label">✦ Collection 2024</span>
+      <h1 style="font-family:var(--font-titre);font-size:clamp(2.5rem,6vw,5rem);color:var(--blanc);font-weight:400;line-height:1.1">
+        La <em style="font-style:italic;color:var(--or-clair)">Galerie</em>
+      </h1>
+    </div>
+  </section>
+
+  <!-- GALERIE PRINCIPALE -->
+  <section class="section-padding" aria-labelledby="galerie-titre">
+    <div class="container">
+      <div class="centrer reveal">
+        <p class="section-label">✦ Filtrer par catégorie</p>
+        <h2 class="section-titre" id="galerie-titre" style="display:none">Galerie des Œuvres</h2>
+
+        <!-- Filtres dynamiques -->
+        <div class="filtres-galerie" role="toolbar" aria-label="Filtres de catégorie">
+          <button class="btn-filtre actif" data-filtre="tout" aria-pressed="true">Toutes les œuvres</button>
+          <button class="btn-filtre" data-filtre="portrait" aria-pressed="false">Portraits</button>
+          <button class="btn-filtre" data-filtre="paysage" aria-pressed="false">Paysages</button>
+          <button class="btn-filtre" data-filtre="abstrait" aria-pressed="false">Art Abstrait</button>
+        </div>
+      </div>
+
+      <!-- Grille galerie -->
+      <div class="galerie-grid" id="galerie-grid" role="list" aria-label="Œuvres disponibles">
+
+        <!-- PORTRAIT 1 -->
+        <article class="item-galerie reveal" data-categorie="portrait" role="listitem">
+          <picture>
+            <source srcset="../images/portrait1.png" type="image/png" media="(min-width:600px)" />
+            <img src="../images/portrait1.png"
+                 alt="Portrait expressif d'une femme marocaine, huile sur toile"
+                 loading="lazy" />
+          </picture>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">Lumière d'Orient</h3>
+            <p class="galerie-desc">Portrait intime capturant la grâce et la profondeur du regard féminin. Technique à l'huile avec glacis dorés.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">3 200 DH</span>
+              <span class="galerie-tag">Portrait · 60×80 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir Lumière d'Orient">Acquérir</button>
+        </article>
+
+        <!-- PAYSAGE 1 -->
+        <article class="item-galerie reveal delay-1" data-categorie="paysage" role="listitem">
+          <picture>
+            <source srcset="../images/landscape1.png" type="image/png" media="(min-width:600px)" />
+            <img src="../images/landscape1.png"
+                 alt="Paysage côtier de Casablanca au coucher de soleil, peinture impressionniste"
+                 loading="lazy" />
+          </picture>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">Crépuscule sur l'Atlantique</h3>
+            <p class="galerie-desc">La côte casablancaise baignée d'une lumière dorée. Les vagues se brisent dans une symphonie de couleurs chaudes.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">2 800 DH</span>
+              <span class="galerie-tag">Paysage · 50×70 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir Crépuscule sur l'Atlantique">Acquérir</button>
+        </article>
+
+        <!-- ABSTRAIT 1 -->
+        <article class="item-galerie reveal delay-2" data-categorie="abstrait" role="listitem">
+          <picture>
+            <source srcset="../images/abstract1.png" type="image/png" media="(min-width:600px)" />
+            <img src="../images/abstract1.png"
+                 alt="Peinture abstraite en or et bordeaux, expressionnisme"
+                 loading="lazy" />
+          </picture>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">Harmonie Dorée</h3>
+            <p class="galerie-desc">Tourbillion de pigments d'or et de bordeaux profond. Une méditation sur l'équilibre entre le chaos et la paix intérieure.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">3 800 DH</span>
+              <span class="galerie-tag">Abstrait · 80×100 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir Harmonie Dorée">Acquérir</button>
+        </article>
+
+        <!-- PORTRAIT 2 -->
+        <article class="item-galerie reveal" data-categorie="portrait" role="listitem">
+          <picture>
+            <source srcset="../images/portrait2.png" type="image/png" media="(min-width:600px)" />
+            <img src="../images/portrait2.png"
+                 alt="Portrait rêveur d'une femme lisant, peinture impressionniste"
+                 loading="lazy" />
+          </picture>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">La Lectrice Rêveuse</h3>
+            <p class="galerie-desc">Moment suspendu d'une femme perdue dans la magie des mots. Lumière tamisée et palette de terres chaudes.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">2 600 DH</span>
+              <span class="galerie-tag">Portrait · 40×60 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir La Lectrice Rêveuse">Acquérir</button>
+        </article>
+
+        <!-- PAYSAGE 2 -->
+        <article class="item-galerie reveal delay-1" data-categorie="paysage" role="listitem">
+          <picture>
+            <source srcset="../images/landscape2.png" type="image/png" media="(min-width:600px)" />
+            <img src="../images/landscape2.png"
+                 alt="Ruelle de médina marocaine, architecture traditionnelle"
+                 loading="lazy" />
+          </picture>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">Les Ruelles de l'Âme</h3>
+            <p class="galerie-desc">Dédale lumineux d'une médina marocaine. Les arches sculptées filtrent un soleil d'or sur les murs ocres millénaires.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">2 400 DH</span>
+              <span class="galerie-tag">Paysage · 50×60 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir Les Ruelles de l'Âme">Acquérir</button>
+        </article>
+
+        <!-- ABSTRAIT 2 -->
+        <article class="item-galerie reveal delay-2" data-categorie="abstrait" role="listitem">
+          <picture>
+            <source srcset="../images/abstract2.png" type="image/png" media="(min-width:600px)" />
+            <img src="../images/abstract2.png"
+                 alt="Composition géométrique abstraite en or et noir, art minimaliste"
+                 loading="lazy" />
+          </picture>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">Géométrie de l'Infini</h3>
+            <p class="galerie-desc">Lignes pures et formes géométriques s'entremêlent en une danse dorée inspirée des zelliges marocains.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">4 200 DH</span>
+              <span class="galerie-tag">Abstrait · 90×90 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir Géométrie de l'Infini">Acquérir</button>
+        </article>
+
+        <!-- PORTRAIT 3 (placeholder CSS) -->
+        <article class="item-galerie reveal" data-categorie="portrait" role="listitem">
+          <div style="height:360px;background:linear-gradient(135deg,#2a1a0a,#4a2e14);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem">
+            <span style="font-size:3rem">👤</span>
+            <span style="color:var(--or);font-family:var(--font-sous-titre);font-style:italic">Portrait en cours…</span>
+          </div>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">Le Sage du Temps</h3>
+            <p class="galerie-desc">Portrait d'un vieil artisan de médina. Chaque ride raconte une vie dédiée à la beauté du geste et de la matière.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">3 500 DH</span>
+              <span class="galerie-tag">Portrait · 60×80 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir Le Sage du Temps">Acquérir</button>
+        </article>
+
+        <!-- PAYSAGE 3 (placeholder CSS) -->
+        <article class="item-galerie reveal delay-1" data-categorie="paysage" role="listitem">
+          <div style="height:360px;background:linear-gradient(135deg,#0a1a2a,#1a3050);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem">
+            <span style="font-size:3rem">🌊</span>
+            <span style="color:var(--or);font-family:var(--font-sous-titre);font-style:italic">Paysage en cours…</span>
+          </div>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">Nuit sur le Détroit</h3>
+            <p class="galerie-desc">La mer de Gibraltar sous la lune millénaire. Reflets argentés, mystère et grandeur de la nature africaine.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">3 100 DH</span>
+              <span class="galerie-tag">Paysage · 70×90 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir Nuit sur le Détroit">Acquérir</button>
+        </article>
+
+        <!-- ABSTRAIT 3 (placeholder CSS) -->
+        <article class="item-galerie reveal delay-2" data-categorie="abstrait" role="listitem">
+          <div style="height:360px;background:linear-gradient(135deg,#1a0a1a,#3a1a35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem">
+            <span style="font-size:3rem">🌌</span>
+            <span style="color:var(--or);font-family:var(--font-sous-titre);font-style:italic">Abstrait en cours…</span>
+          </div>
+          <div class="galerie-info">
+            <h3 class="galerie-titre">Cosmogonie</h3>
+            <p class="galerie-desc">L'univers à son premier souffle. Explosions de couleurs, nébuleuses de pigments, naissance de mondes invisibles.</p>
+            <div class="galerie-meta">
+              <span class="galerie-prix">5 000 DH</span>
+              <span class="galerie-tag">Abstrait · 100×120 cm</span>
+            </div>
+          </div>
+          <button class="btn-acheter" aria-label="Acquérir Cosmogonie">Acquérir</button>
+        </article>
+
+      </div>
+
+      <!-- Appel à l'action -->
+      <div class="centrer reveal" style="margin-top:4rem;padding:3rem;background:var(--beige);border:1px solid var(--beige-fonce)">
+        <p class="section-label">✦ Vous ne trouvez pas ce que vous cherchez ?</p>
+        <h3 style="font-family:var(--font-titre);font-size:1.8rem;margin-bottom:1rem">Commandez votre œuvre <em>sur mesure</em></h3>
+        <p style="color:var(--gris);font-size:0.9rem;margin-bottom:2rem">Décrivez votre vision et je créerai une pièce unique rien que pour vous.</p>
+        <a href="contact.html" class="btn-or">Demander un devis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie">
+    <div class="lightbox-inner">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Fermer">✕</button>
+      <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Image précédente">‹</button>
+      <img id="lightbox-img" src="" alt="Œuvre en plein écran" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+      <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Image suivante">›</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Imane <span>HADI</span></div>
+        <p class="footer-tagline">Artiste peintre passionnée, créatrice d'émotions à travers la couleur et la forme.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+          <a href="#" class="social-btn" aria-label="Pinterest">📌</a>
+        </div>
+      </div>
+      <nav aria-label="Plan du site">
+        <p class="footer-titre">Navigation</p>
+        <ul class="footer-liens">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Catégories">
+        <p class="footer-titre">Catégories</p>
+        <ul class="footer-liens">
+          <li><a href="#">Portraits</a></li>
+          <li><a href="#">Paysages</a></li>
+          <li><a href="#">Art Abstrait</a></li>
+        </ul>
+      </nav>
+      <address style="font-style:normal">
+        <p class="footer-titre">Contact</p>
+        <div class="footer-contact-item"><span>📍</span><span>Bd Abdelmoumen, Anfa, Casablanca</span></div>
+        <div class="footer-contact-item"><span>📞</span><span><a href="tel:+212649705858" style="color:var(--gris)">+212 649 705 858</a></span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>contact@imanehadi.art</span></div>
+      </address>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Imane HADI. Tous droits réservés.</p>
+      <nav class="footer-legal"><a href="#">Mentions légales</a><a href="#">CGV</a></nav>
+    </div>
+  </footer>
+
+  <button id="back-top" aria-label="Retour en haut">↑</button>
+  <script src="../js/script.js"></script>
+</body>
+</html>

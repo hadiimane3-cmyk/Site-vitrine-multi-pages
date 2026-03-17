@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imane HADI — Artiste Peintre à Casablanca</title>
+  <meta name="description" content="Imane HADI, artiste peintre basée à Casablanca. Découvrez ses œuvres uniques : portraits, paysages, art abstrait. Commandes personnalisées disponibles." />
+  <meta name="keywords" content="Imane HADI, artiste peintre, Casablanca, Maroc, tableaux, galerie d'art, peinture, portrait, paysage, abstrait" />
+  <meta name="author" content="Imane HADI" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Imane HADI — Artiste Peintre à Casablanca" />
+  <meta property="og:description" content="Découvrez l'univers artistique d'Imane HADI, peintre marocaine passionnée." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_MA" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <a href="index.html" class="nav-logo" aria-label="Accueil Imane HADI">
+      Imane <span>HADI</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="pages/about.html">À propos</a></li>
+      <li><a href="pages/gallery.html">Galerie</a></li>
+      <li><a href="pages/services.html">Services</a></li>
+      <li><a href="pages/contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" id="hamburger-btn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" aria-label="Section principale">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">✦ Artiste Peintre · Casablanca, Maroc ✦</p>
+      <h1 class="hero-title">
+        L'Art qui <em>Éveille</em><br>les Émotions
+      </h1>
+      <p class="hero-subtitle">Portraits · Paysages · Art Abstrait</p>
+      <div class="hero-btns">
+        <a href="pages/gallery.html" class="btn-or">Découvrir la Galerie</a>
+        <a href="pages/contact.html" class="btn-contour">Commander une Œuvre</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Défiler</span>
+    </div>
+  </section>
+
+  <!-- ========== SECTION : ŒUVRES EN VEDETTE ========== -->
+  <section class="section-padding" aria-labelledby="oeuvres-titre">
+    <div class="container">
+      <div class="centrer reveal">
+        <p class="section-label">✦ Sélection</p>
+        <h2 class="section-titre" id="oeuvres-titre">Œuvres <em>en Vedette</em></h2>
+        <p class="section-texte">Chaque tableau est une fenêtre ouverte sur l'âme, une invitation à ressentir ce que les mots ne peuvent exprimer.</p>
+      </div>
+
+      <div class="grid-oeuvres" role="list" aria-label="Galerie d'œuvres en vedette">
+        <!-- Œuvre 1 -->
+        <article class="carte-oeuvre reveal delay-1" role="listitem">
+          <picture>
+            <source srcset="images/portrait1.png" type="image/png" />
+            <img src="images/portrait1.png" alt="Portrait d'une femme marocaine élégante, peinture à l'huile" loading="lazy" />
+          </picture>
+          <div class="carte-overlay">
+            <h3 class="carte-nom">Lumière d'Orient</h3>
+            <p class="carte-prix">3 200 DH</p>
+          </div>
+          <span class="carte-categorie">Portrait</span>
+        </article>
+
+        <!-- Œuvre 2 -->
+        <article class="carte-oeuvre reveal delay-2" role="listitem">
+          <picture>
+            <source srcset="images/landscape1.png" type="image/png" />
+            <img src="images/landscape1.png" alt="Paysage de Casablanca au coucher de soleil, peinture impressionniste" loading="lazy" />
+          </picture>
+          <div class="carte-overlay">
+            <h3 class="carte-nom">Crépuscule sur l'Atlantique</h3>
+            <p class="carte-prix">2 800 DH</p>
+          </div>
+          <span class="carte-categorie">Paysage</span>
+        </article>
+
+        <!-- Œuvre 3 -->
+        <article class="carte-oeuvre reveal delay-3" role="listitem">
+          <picture>
+            <source srcset="images/abstract1.png" type="image/png" />
+            <img src="images/abstract1.png" alt="Composition abstraite en or et bordeaux, peinture expressionniste" loading="lazy" />
+          </picture>
+          <div class="carte-overlay">
+            <h3 class="carte-nom">Harmonie Dorée</h3>
+            <p class="carte-prix">3 800 DH</p>
+          </div>
+          <span class="carte-categorie">Abstrait</span>
+        </article>
+      </div>
+
+      <div class="centrer" style="margin-top:3rem">
+        <a href="pages/gallery.html" class="btn-or">Voir toute la Galerie</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION : PRÉSENTATION ARTISTE ========== -->
+  <section class="section-padding section-bg-beige" aria-labelledby="artiste-titre">
+    <div class="container">
+      <div class="artiste-grid">
+        <!-- Image de l'artiste -->
+        <div class="artiste-img-wrap reveal-left">
+          <picture>
+            <source srcset="images/artist.png" type="image/png" />
+            <img
+              src="images/artist.png"
+              alt="Portrait d'Imane HADI, artiste peintre marocaine basée à Casablanca"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+
+        <!-- Texte de présentation -->
+        <div class="reveal-right">
+          <p class="section-label">✦ L'Artiste</p>
+          <h2 class="section-titre" id="artiste-titre">
+            Imane <em>HADI</em>
+          </h2>
+          <blockquote class="artiste-citation">
+            « La peinture est le silence qui parle, la couleur qui chante, et l'âme qui se révèle. »
+          </blockquote>
+          <p style="font-size:0.92rem;color:#666;line-height:1.9;margin-bottom:1rem;">
+            Née et formée à Casablanca, Imane HADI est une artiste peintre autodidacte et passionnée dont l'univers artistique s'inspire des couleurs vibrantes du Maroc, des lumières de la Méditerranée et des profondeurs de l'âme humaine.
+          </p>
+          <p style="font-size:0.92rem;color:#666;line-height:1.9;">
+            Ses œuvres — portraits expressifs, paysages lumineux et abstractions audacieuses — sont exposées dans des galeries à Casablanca et collectionnées dans plusieurs pays. Chaque tableau est une méditation silencieuse, une histoire racontée à travers la texture de la toile et la magie des pigments.
+          </p>
+
+          <div class="artiste-stats">
+            <div class="stat-item">
+              <span class="stat-nb" data-count="120" data-suffix="+">0+</span>
+              <span class="stat-lbl">Tableaux vendus</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-nb" data-count="8" data-suffix="">0</span>
+              <span class="stat-lbl">Années d'expérience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-nb" data-count="15" data-suffix="+">0+</span>
+              <span class="stat-lbl">Expositions</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-nb" data-count="6" data-suffix="">0</span>
+              <span class="stat-lbl">Pays collectionneurs</span>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem">
+            <a href="pages/about.html" class="btn-or">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION : SERVICES ========== -->
+  <section class="section-padding section-bg-noir" aria-labelledby="services-titre">
+    <div class="container">
+      <div class="centrer reveal" style="margin-bottom:3.5rem">
+        <p class="section-label" style="color:var(--or)">✦ Ce que je propose</p>
+        <h2 class="section-titre" id="services-titre" style="color:var(--blanc)">
+          Services <em>Artistiques</em>
+        </h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal delay-1" style="background:#111;border-color:#2a2a2a">
+          <div class="service-icon">🖼️</div>
+          <h3 class="service-titre" style="color:var(--blanc)">Tableaux Originaux</h3>
+          <p class="service-desc">Découvrez ma collection permanente de peintures originales à l'huile, à l'acrylique et à l'aquarelle. Chaque œuvre est unique et signée.</p>
+        </div>
+        <div class="service-card reveal delay-2" style="background:#111;border-color:#2a2a2a">
+          <div class="service-icon">✏️</div>
+          <h3 class="service-titre" style="color:var(--blanc)">Commandes Personnalisées</h3>
+          <p class="service-desc">Offrez-vous ou offrez à vos proches une œuvre sur mesure : portrait, paysage ou composition abstraite selon vos désirs et votre décor.</p>
+        </div>
+        <div class="service-card reveal delay-3" style="background:#111;border-color:#2a2a2a">
+          <div class="service-icon">🏢</div>
+          <h3 class="service-titre" style="color:var(--blanc)">Décoration d'Espaces</h3>
+          <p class="service-desc">Hotels, restaurants, bureaux : je crée des œuvres monumentales adaptées à vos espaces professionnels pour un impact visuel remarquable.</p>
+        </div>
+      </div>
+
+      <div class="centrer" style="margin-top:3rem">
+        <a href="pages/services.html" class="btn-or">Voir tous les services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION : TÉMOIGNAGES ========== -->
+  <section class="section-padding section-bg-beige" aria-labelledby="temoignages-titre">
+    <div class="container">
+      <div class="centrer reveal">
+        <p class="section-label">✦ Ils parlent de moi</p>
+        <h2 class="section-titre" id="temoignages-titre">Témoignages <em>Clients</em></h2>
+        <p class="section-texte">La satisfaction de mes collectionneurs est ma plus belle récompense.</p>
+      </div>
+
+      <div class="temoignages-grid">
+        <article class="carte-temoignage reveal delay-1">
+          <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="temoignage-texte">
+            « J'ai commandé un portrait de famille à Imane et le résultat m'a coupé le souffle. Elle a su capturer l'essence de chaque personnage avec une sensibilité rare. Un chef-d'œuvre que nous chérirons toute notre vie. »
+          </p>
+          <div class="temoignage-auteur">
+            <div class="auteur-avatar" aria-hidden="true">S</div>
+            <div>
+              <span class="auteur-nom">Salma Benali</span>
+              <span class="auteur-lieu">Casablanca, Maroc</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-temoignage reveal delay-2">
+          <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="temoignage-texte">
+            « Nous avons fait appel à Imane pour habiller les murs de notre boutique hôtel à Marrakech. Ses œuvres abstraites créent une atmosphère unique et nos clients sont systématiquement subjugués. Un investissement exceptionnel. »
+          </p>
+          <div class="temoignage-auteur">
+            <div class="auteur-avatar" aria-hidden="true">K</div>
+            <div>
+              <span class="auteur-nom">Karim Cherkaoui</span>
+              <span class="auteur-lieu">Marrakech, Maroc</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="carte-temoignage reveal delay-3">
+          <div class="etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="temoignage-texte">
+            « J'ai découvert Imane lors d'une exposition à Casablanca et j'ai immédiatement acquis son paysage de Tanger. La lumière dans ses toiles est magique. Je suis depuis devenu collectionneur de son art. »
+          </p>
+          <div class="temoignage-auteur">
+            <div class="auteur-avatar" aria-hidden="true">M</div>
+            <div>
+              <span class="auteur-nom">Marc Delacroix</span>
+              <span class="auteur-lieu">Paris, France</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION : APPEL À L'ACTION ========== -->
+  <section class="section-padding section-bg-noir" style="text-align:center" aria-labelledby="cta-titre">
+    <div class="container reveal">
+      <p class="section-label" style="color:var(--or)">✦ Votre Œuvre Unique</p>
+      <h2 class="section-titre" id="cta-titre" style="color:var(--blanc);margin:0 auto 1.5rem;max-width:600px">
+        Commandez Votre <em>Tableau Personnalisé</em>
+      </h2>
+      <p style="color:var(--gris-clair);font-size:1rem;margin-bottom:2.5rem;font-family:var(--font-sous-titre)">
+        Chaque commande est un dialogue entre l'artiste et le collectionneur.<br>
+        Décrivez votre vision, Imane la réalise.
+      </p>
+      <a href="pages/contact.html" class="btn-or">Démarrer ma Commande</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Imane <span>HADI</span></div>
+        <p class="footer-tagline">Artiste peintre passionnée, créatrice d'émotions à travers la couleur et la forme. Basée à Casablanca, rayonnant à travers le monde.</p>
+        <div class="footer-social" aria-label="Réseaux sociaux">
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+          <a href="#" class="social-btn" aria-label="Pinterest">📌</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">💼</a>
+        </div>
+      </div>
+
+      <nav aria-label="Plan du site">
+        <p class="footer-titre">Navigation</p>
+        <ul class="footer-liens">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="pages/about.html">À propos</a></li>
+          <li><a href="pages/gallery.html">Galerie</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Catégories d'œuvres">
+        <p class="footer-titre">Galerie</p>
+        <ul class="footer-liens">
+          <li><a href="pages/gallery.html?filtre=portrait">Portraits</a></li>
+          <li><a href="pages/gallery.html?filtre=paysage">Paysages</a></li>
+          <li><a href="pages/gallery.html?filtre=abstrait">Art Abstrait</a></li>
+          <li><a href="pages/services.html">Commandes</a></li>
+        </ul>
+      </nav>
+
+      <address style="font-style:normal">
+        <p class="footer-titre">Contact</p>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Boulevard Abdelmoumen, Anfa, Casablanca</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span><a href="tel:+212649705858" style="color:var(--gris)">+212 649 705 858</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️</span>
+          <span>contact@imanehadi.art</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>🕐</span>
+          <span>Lun–Sam : 9h–18h</span>
+        </div>
+      </address>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Imane HADI. Tous droits réservés. Œuvres protégées par le droit d'auteur.</p>
+      <nav class="footer-legal" aria-label="Mentions légales">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">CGV</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button id="back-top" aria-label="Retour en haut de page">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

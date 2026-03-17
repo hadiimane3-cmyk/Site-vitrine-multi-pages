@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Imane HADI, Artiste Peintre à Casablanca</title>
+  <meta name="description" content="Contactez Imane HADI pour vos commandes de tableaux personnalisés, questions ou devis. Atelier à Casablanca, Boulevard Abdelmoumen, Anfa." />
+  <meta property="og:title" content="Contact — Imane HADI, Artiste Peintre" />
+  <meta property="og:description" content="Contactez l'artiste peintre Imane HADI à Casablanca pour vos commandes et devis." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+
+  <!-- NAVIGATION -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Navigation principale">
+    <a href="../index.html" class="nav-logo">Imane <span>HADI</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="gallery.html">Galerie</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO CONTACT -->
+  <section class="contact-hero" style="padding-top:80px" aria-label="En-tête contact">
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.92),rgba(10,10,10,0.4))"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <span class="section-label">✦ Parlons de votre projet</span>
+      <h1 style="font-family:var(--font-titre);font-size:clamp(2.5rem,6vw,5rem);color:var(--blanc);font-weight:400;line-height:1.1">
+        Me <em style="font-style:italic;color:var(--or-clair)">Contacter</em>
+      </h1>
+    </div>
+  </section>
+
+  <!-- FORMULAIRE + INFOS -->
+  <section class="section-padding" aria-labelledby="contact-titre">
+    <div class="container">
+      <h2 id="contact-titre" class="visually-hidden">Formulaire de contact</h2>
+      <div class="contact-grid">
+
+        <!-- Informations de contact -->
+        <aside aria-label="Informations de contact">
+          <p class="section-label">✦ Coordonnées</p>
+          <h3 style="font-family:var(--font-titre);font-size:1.8rem;margin-bottom:2rem">
+            Mon <em style="font-style:italic">Atelier</em>
+          </h3>
+
+          <div class="contact-info-item reveal">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <div>
+              <p class="contact-info-titre">Adresse</p>
+              <address class="contact-info-val" style="font-style:normal">Boulevard Abdelmoumen<br>Quartier Anfa, Casablanca<br>Maroc</address>
+            </div>
+          </div>
+
+          <div class="contact-info-item reveal delay-1">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <div>
+              <p class="contact-info-titre">Téléphone</p>
+              <a href="tel:+212649705858" class="contact-info-val">+212 649 705 858</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item reveal delay-2">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <div>
+              <p class="contact-info-titre">E-mail</p>
+              <a href="mailto:contact@imanehadi.art" class="contact-info-val">contact@imanehadi.art</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item reveal delay-3">
+            <div class="contact-icon" aria-hidden="true">🕐</div>
+            <div>
+              <p class="contact-info-titre">Horaires d'atelier</p>
+              <p class="contact-info-val">Lundi – Samedi<br>9h00 – 18h00</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item reveal" style="transition-delay:0.6s">
+            <div class="contact-icon" aria-hidden="true">📱</div>
+            <div>
+              <p class="contact-info-titre">Réseaux sociaux</p>
+              <div style="display:flex;gap:0.8rem;margin-top:0.5rem">
+                <a href="#" aria-label="Instagram" style="color:var(--or);font-size:1.4rem">📷</a>
+                <a href="#" aria-label="Facebook" style="color:var(--or);font-size:1.4rem">📘</a>
+                <a href="#" aria-label="Pinterest" style="color:var(--or);font-size:1.4rem">📌</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Citation -->
+          <blockquote style="margin-top:2rem;font-family:var(--font-sous-titre);font-size:1rem;font-style:italic;color:var(--gris);border-left:3px solid var(--or);padding-left:1.2rem;line-height:1.7">
+            « Chaque commande est le début d'une conversation entre mon pinceau et votre âme. »
+          </blockquote>
+        </aside>
+
+        <!-- Formulaire principal -->
+        <div class="reveal-right">
+          <p class="section-label">✦ Votre Message</p>
+          <h3 style="font-family:var(--font-titre);font-size:1.8rem;margin-bottom:2rem">
+            Envoyez-moi <em style="font-style:italic">un Message</em>
+          </h3>
+
+          <form id="form-contact" class="formulaire-contact" novalidate aria-label="Formulaire de contact">
+
+            <!-- Ligne : Nom + Prénom -->
+            <div class="champs-double">
+              <div class="champ">
+                <label for="nom">Nom complet *</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom"
+                       autocomplete="name" required aria-required="true" />
+              </div>
+              <div class="champ">
+                <label for="email">Adresse e-mail *</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com"
+                       autocomplete="email" required aria-required="true" />
+              </div>
+            </div>
+
+            <!-- Ligne : Téléphone + Ville -->
+            <div class="champs-double">
+              <div class="champ">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+212 6XX XXX XXX"
+                       autocomplete="tel" />
+              </div>
+              <div class="champ">
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" name="ville" placeholder="Casablanca, Paris…"
+                       autocomplete="address-level2" />
+              </div>
+            </div>
+
+            <!-- Type de demande -->
+            <div class="champ">
+              <label for="type-demande">Type de demande *</label>
+              <select id="type-demande" name="type-demande" required aria-required="true">
+                <option value="" disabled selected>Sélectionnez votre demande</option>
+                <option value="commande-portrait">Commande — Portrait personnalisé</option>
+                <option value="commande-paysage">Commande — Paysage personnalisé</option>
+                <option value="commande-abstrait">Commande — Art Abstrait</option>
+                <option value="achat-galerie">Achat d'une œuvre en galerie</option>
+                <option value="decoration-pro">Décoration d'espace professionnel</option>
+                <option value="atelier">Inscription atelier / cours</option>
+                <option value="reproduction">Reproduction Fine Art</option>
+                <option value="information">Renseignements généraux</option>
+              </select>
+            </div>
+
+            <!-- Budget estimé -->
+            <div class="champ">
+              <label for="budget">Budget estimé : <strong id="budget-affichage" style="color:var(--or)">2 000 DH</strong></label>
+              <input type="range" id="budget" name="budget"
+                     min="500" max="20000" step="500" value="2000"
+                     aria-label="Budget en dirhams marocains" />
+              <div style="display:flex;justify-content:space-between;font-size:0.72rem;color:var(--gris);margin-top:0.3rem">
+                <span>500 DH</span>
+                <span>10 000 DH</span>
+                <span>20 000 DH</span>
+              </div>
+            </div>
+
+            <!-- Format souhaité (si commande) -->
+            <div class="champ">
+              <label for="format">Format souhaité</label>
+              <select id="format" name="format">
+                <option value="">— Je ne sais pas encore —</option>
+                <option value="petit">Petit format (30×40 cm)</option>
+                <option value="moyen">Moyen format (50×70 cm)</option>
+                <option value="grand">Grand format (80×100 cm)</option>
+                <option value="tres-grand">Très grand format (100×120 cm et +)</option>
+                <option value="sur-mesure">Sur mesure — à discuter</option>
+              </select>
+            </div>
+
+            <!-- Délai -->
+            <div class="champ">
+              <label for="delai">Délai souhaité</label>
+              <select id="delai" name="delai">
+                <option value="">— Flexible —</option>
+                <option value="urgent">Urgent (moins d'un mois)</option>
+                <option value="1-2-mois">1 à 2 mois</option>
+                <option value="2-3-mois">2 à 3 mois</option>
+                <option value="flexible">Pas de contrainte de délai</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="champ">
+              <label for="message">Décrivez votre projet *</label>
+              <textarea id="message" name="message" rows="5"
+                        placeholder="Décrivez votre projet artistique : sujet, atmosphère souhaitée, couleurs préférées, utilisation de l'œuvre…"
+                        required aria-required="true"></textarea>
+            </div>
+
+            <!-- Consentement RGPD -->
+            <div class="champ" style="display:flex;gap:0.8rem;align-items:flex-start">
+              <input type="checkbox" id="rgpd" name="rgpd" required aria-required="true"
+                     style="width:auto;margin-top:3px;accent-color:var(--or)" />
+              <label for="rgpd" style="text-transform:none;letter-spacing:0;font-size:0.82rem;color:var(--gris)">
+                J'accepte que mes données soient utilisées pour traiter ma demande conformément à la <a href="#" style="color:var(--or)">politique de confidentialité</a>. *
+              </label>
+            </div>
+
+            <button type="submit" class="btn-or" style="width:100%;margin-top:1rem;border:none;cursor:pointer;font-size:0.82rem">
+              Envoyer le Message ✉️
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTE GOOGLE MAPS -->
+  <section aria-labelledby="carte-titre" style="padding:0">
+    <h2 id="carte-titre" style="clip:rect(0,0,0,0);position:absolute">Localisation de l'atelier</h2>
+    <iframe
+      class="carte-google"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4789!2d-7.6384!3d33.5751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sBoulevard%20Abdelmoumen%2C%20Casablanca%2C%20Morocco!5e0!3m2!1sfr!2sma!4v1680000000000!5m2!1sfr!2sma"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Localisation de l'atelier Imane HADI — Boulevard Abdelmoumen, Anfa, Casablanca"
+      aria-label="Carte Google Maps montrant l'atelier d'Imane HADI à Casablanca">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Imane <span>HADI</span></div>
+        <p class="footer-tagline">Artiste peintre passionnée, créatrice d'émotions à travers la couleur et la forme. Basée à Casablanca.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+          <a href="#" class="social-btn" aria-label="Pinterest">📌</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">💼</a>
+        </div>
+      </div>
+      <nav aria-label="Plan du site">
+        <p class="footer-titre">Navigation</p>
+        <ul class="footer-liens">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Services">
+        <p class="footer-titre">Services</p>
+        <ul class="footer-liens">
+          <li><a href="services.html">Commandes personnalisées</a></li>
+          <li><a href="services.html">Grands formats</a></li>
+          <li><a href="services.html">Ateliers</a></li>
+          <li><a href="services.html">Tarifs</a></li>
+        </ul>
+      </nav>
+      <address style="font-style:normal">
+        <p class="footer-titre">Atelier</p>
+        <div class="footer-contact-item"><span>📍</span><span>Bd Abdelmoumen, Anfa<br>Casablanca, Maroc</span></div>
+        <div class="footer-contact-item"><span>📞</span><span><a href="tel:+212649705858" style="color:var(--gris)">+212 649 705 858</a></span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>contact@imanehadi.art</span></div>
+        <div class="footer-contact-item"><span>🕐</span><span>Lun–Sam : 9h–18h</span></div>
+      </address>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Imane HADI — Artiste Peintre. Tous droits réservés. Œuvres protégées par le droit d'auteur marocain et international.</p>
+      <nav class="footer-legal" aria-label="Liens légaux">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions Générales de Vente</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button id="back-top" aria-label="Retour en haut de page">↑</button>
+
+  <!-- Toast notification -->
+  <div class="toast" role="alert" aria-live="assertive"></div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

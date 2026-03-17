@@ -22,6 +22,7 @@ Créer un site professionnel pour présenter les œuvres d’une artiste peintre
 
 ## 📁 Structure du projet
 <img width="106" height="124" alt="image" src="https://github.com/user-attachments/assets/54fc17f0-971c-43a8-af97-70b6560084e3" />
+
 ## 📍 Informations
 - Nom : Imane HADI
 - Localisation : Casablanca, Maroc
